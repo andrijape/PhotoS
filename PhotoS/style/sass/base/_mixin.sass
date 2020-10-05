@@ -1,0 +1,32 @@
+/* Variables */
+
+/* Colors */
+$color-1: #ffffff
+$color-2: #3A1C71
+$color-3: #c0392b
+$color-4: #95e1d3
+
+/* Linear gradient */
+$lg-1: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%)
+$lg-2: linear-gradient(to right, #fdfbfb, #ebedee)
+$lg-3: linear-gradient(to right, #eb5757, #000000)
+    
+/* Mixin */
+@mixin transform
+    opacity: 0.1
+    transform: translate(-3%, -5%)
+    transition: all 0.3s linear
+    
+@mixin txt
+    text-decoration: underline $color-3
+
+@mixin box
+    box-shadow: 3px 3px 5px $color-3
+
+@mixin scroll($size, $thumb-color, $background-color)
+    &::-webkit-scrollbar
+        width: $size
+    &::-webkit-scrollbar-thumb
+        background: $thumb-color
+    &::-webkit-scrollbar-track
+        background: $background-color

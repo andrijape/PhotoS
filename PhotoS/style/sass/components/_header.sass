@@ -1,0 +1,75 @@
+header
+    height: 65vh
+    background-image: url(img/header.jpg)
+    background-size: cover
+    
+    nav
+        height: 10vh
+        width: 80%
+        margin: auto
+        display: flex
+        justify-content: space-around
+        align-items: center
+        font-family: $font-2
+
+        ul
+            width: 40%
+            margin: 2vh
+            display: flex
+            justify-content: space-evenly
+            list-style: none
+
+            li a
+                font-size: 1.5rem
+                color: $color-1
+                text-decoration: none
+
+                &:hover
+                    text-decoration: underline
+
+                @media (max-width: 1200px)
+                    font-size: 1.3rem
+
+                @media (max-width: 1100px)
+                    font-size: 1.1rem
+
+        h1
+            font-size: 2.5rem
+            color: $color-1
+            margin: 2vh
+
+    .welcome    
+        width: 100%       
+        margin: auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        h1     
+            text-align: center
+            font-family: $font-1
+            color: $color-1
+            font-size: 9rem 
+        
+        .btn 
+            height: 4vh
+            width: 13vw 
+            border: $color-1 solid 1px
+            background: none
+            color: $color-1
+            font-size: 1.3rem
+            outline: none
+            margin: auto
+            transition: all 0.3s
+            
+            &:hover
+                cursor: pointer
+                background: $color-1
+                color: #000000
+
+            &:focus
+                cursor: pointer
+
+            &:active
+                transform: scaleY(0.90)
